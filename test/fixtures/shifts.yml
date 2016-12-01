@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_debut: 2016-11-30 00:37:10
+  quels_jours: MyText
+  nbr_heures_par_jours: 1
+
+two:
+  date_debut: 2016-11-30 00:37:10
+  quels_jours: MyText
+  nbr_heures_par_jours: 1

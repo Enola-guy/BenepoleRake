@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date debut:</strong>
+  <%= @shift.date_debut %>
+</p>
+
+<p>
+  <strong>Quels jours:</strong>
+  <%= @shift.quels_jours %>
+</p>
+
+<p>
+  <strong>Nbr heures par jours:</strong>
+  <%= @shift.nbr_heures_par_jours %>
+</p>
+
+<%= link_to 'Edit', edit_shift_path(@shift) %> |
+<%= link_to 'Back', shifts_path %>

@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  devise_for :personnes
+  resources :rapports
+  resources :personnes
+  resources :missions
+  resources :shifts
+  resources :missions
+  resources :festivals
+  resources :festivals
+
+
+  #ajouté pour le 2. de la gem Devise
+  root to: "home#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
