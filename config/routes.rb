@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 
   #ajouté pour le 2. de la gem Devise
-  root to: "home#index"
+  root to: "festivals#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

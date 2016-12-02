@@ -20,9 +20,9 @@ class AddDeviseToPersonnes < ActiveRecord::Migration
       t.string   :last_sign_in_ip
 
       ## Confirmable
-      # t.string   :confirmation_token
-      # t.datetime :confirmed_at
-      # t.datetime :confirmation_sent_at
+       t.string   :confirmation_token
+       t.datetime :confirmed_at
+       t.datetime :confirmation_sent_at
       # t.string   :unconfirmed_email # Only if using reconfirmable
 
       ## Lockable
@@ -37,8 +37,8 @@ class AddDeviseToPersonnes < ActiveRecord::Migration
 
     add_index :personnes, :email,                unique: true
     add_index :personnes, :reset_password_token, unique: true
-    # add_index :personnes, :confirmation_token,   unique: true
-    # add_index :personnes, :unlock_token,         unique: true
+    add_index :personnes, :confirmation_token,   unique: true
+    add_index :personnes, :unlock_token,         unique: true
   end
 
   def self.down
